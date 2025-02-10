@@ -7,8 +7,8 @@ https://phgithub.ph56k.top/https://raw.githubusercontent.com/pharder56k/sbconfig
 ### Linux Tun模板：
 https://phgithub.ph56k.top/https://raw.githubusercontent.com/pharder56k/sbconfig/refs/heads/main/config_tun.json
 
-### Mac 模板：
-
+### Mac Tun模板：
+https://phgithub.ph56k.top/https://raw.githubusercontent.com/pharder56k/sbconfig/refs/heads/main/config_tun_mac.json
 
 ### iphone 模板：
 https://phgithub.ph56k.top/https://raw.githubusercontent.com/pharder56k/sbconfig/refs/heads/main/config_iphone.json

@@ -78,7 +78,10 @@
         "com.tencent.soter.soterserver",
         "com.tencent.wemeet.app",
         "com.tencent.weread",
-        "com.tencent.wework"
+        "com.tencent.wework",
+        "com.microsoft.emmx",
+        "com.tencent.mobileqq",
+        "org.mozilla.firefox"
       ],
       "udp_timeout": "5m",
       "stack": "mixed",
