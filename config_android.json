@@ -45,12 +45,50 @@
     "strategy": "ipv4_only"
   },
 
-  "inbounds": [
+"inbounds": [
     {
       "type": "tun",
-      "address": "172.19.0.1/30",
+      "tag": "tun-auto",
       "mtu": 9000,
-      "auto_route": true
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_address": [
+        "0.0.0.0/1",
+        "128.0.0.0/1",
+        "::/1",
+        "8000::/1"
+      ],
+      "route_exclude_address": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16",
+        "fc00::/7"
+      ],
+      "exclude_package": [
+        "com.jingdong.app.mall",
+        "com.douban.frodo",
+        "com.taobao.taobao",
+        "com.eg.android.AlipayGphone",
+        "com.tencent.mm",
+        "com.tencent.mp",
+        "com.tencent.soter.soterserver",
+        "com.tencent.wemeet.app",
+        "com.tencent.weread",
+        "com.tencent.wework"
+      ],
+      "udp_timeout": "5m",
+      "stack": "mixed",
+      "platform": {
+        "http_proxy": {
+          "server": "127.0.0.1",
+          "server_port": 8080
+        }
+      },
+      "sniff": true
     }
   ],
 
